@@ -17,6 +17,7 @@ public class BancaCayman extends Banca {
 		if ((getConto() > 0) && (quantita <= getConto())) {
 			long valoreTotaleConto = getConto() - quantita;
 			setConto(valoreTotaleConto);
+			return true;
 		}
 		return false;
 	}
